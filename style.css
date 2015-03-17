@@ -1,0 +1,63 @@
+body {
+	padding: 20px 10px;
+	font-family: Helvetica;
+	max-width: 2000px;
+	margin: 0 auto; 
+	font-size: 1.6em;
+}                 
+
+/*Below are the stylings for individual tags*/
+
+
+.lesson {
+	background-color: #a91515;
+	border-radius: 20px;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+h2 {
+	margin: 10px;
+	color:#1a1a1a;
+	font-family: Helvetica;
+}
+
+.concept {
+	background-color: #fffcc3;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 10px;
+	color: #1a1a1a;
+	font-family: Helvetica;
+}
+
+.concept-title {
+	font-size: 1.6em;
+	margin: 8px;
+	text-align: center;
+	color: #1a1a1a;
+}
+
+.concept-description {
+	font-weight: lighter;
+  font-size: 1.2em;
+	margin: 6px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+a:link{
+    text-decoration:none;
+    color:blue;
+}
+a:hover{
+    color:RED;
+}
+
+
