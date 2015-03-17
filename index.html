@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Eric's Webpage!
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="lesson">
+			<h2 id="lesson-1">Lesson 1:Basics of the World Wide Web and HTML
+			</h2>
+			<div class="concept" id="lesson-1.1">
+				<div class="concept-title">Major Pieces of the Internet Include:
+				</div>
+				<div class="concept-description">
+					<p>
+						<ol>
+							<li>You and your computer/browser</li>
+							<li>The internet</li>
+							<li>Servers</li>
+						</ol>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-1.2">
+				<div class="concept-title">Hypertext Markup Language (HTML)-"The Heart of the Web"
+				</div>
+				<div class="concept-description">
+					<p>HTML is made up of:
+						<ul>
+							<li>Text Content (what you see)</li>
+							<li>Markup (what it looks like)</li>
+							<li>References to other documents (e.g. images and videos)</li>
+							<li>Links to other pages</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-1.3">
+				<div class="concept-title">Basic HTML Vocabulary
+				</div>
+				<div class="concept-description">
+					<p>
+						<ul>
+							<li><b>Tag</b>: An HTML tag is always contained within angled brackets. Most tags have an opening tag and a closing tag. Some tags (called "void" tags) do not require a closing tag.</li>
+							<li><b>Element</b>: An HTML element refers to everything within a set of opening and closing tags.</li>
+							<li><b>Attribute</b>: This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write <br>a href="www.udacity.com">Udacity URl /a</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-1.4">
+				<div class="concept-title">Inline v Block Elements
+				</div>
+				<div class="concept-description">
+					<p>HTML elements are usually <b>block-level</b> elements or <b>inline</b> elements. A block-level element occupies the entire space of its parent element, thereby creating a "block". An inline element, however, takes up only as much width as it needs, and does not force new lines.<br><br>
+					A block-display element will span the full width of the space available to it, and so will start on a new line in the flow of HTML. The flow will continue on a new line after the block-display element. Some examples of block elements include: div, p, h, ul, ol, and tables.<br><br>
+					Inline-display elements don’t break the flow. They just fit in with the flow of the document. Examples of inline elements include: span, a, strong.<br><br>
+					Those are the quick descriptions of inline and block elements. To read about them in more detail, head over to this article at <a href="http://webdesignfromscratch.com/html-css/css-block-and-inline/"> webdesignbyscratch.com</a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2 id="lesson-2">Lesson 2:Creating a Structured Document with HTML
+			</h2>
+			<div class="concept" id="lesson-2.1">
+				<div class="concept-title">Think of a Website as a House
+				</div>
+				<div class="concept-description">
+					<p>
+						<ul>
+							<li>HTML is like the structure (where are the walls, what room is what, etc.)</li>
+							<li>CSS is the style of the house (decorations, paint, etc.)</li>
+							<li>Java is the interactive components of a house (garage door opener, remote control, etc.)</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-2.2">
+				<div class="concept-title">Document Object Model
+				</div>
+				<div class="concept-description">
+					<p>
+						A browser turns HTML tags into elements of a tree-like structure or DOM (Document Object Model. To learn more about what a "tree-like structure" means, read the first two paragraphs of <a href="http://en.wikipedia.org/wiki/Tree_structure">this wiki page about Tree Structure</a>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-2.3">
+				<div class="concept-title">Boxes, Boxes, Boxes!
+				</div>
+				<div class="concept-description">
+					<p>Everything on a webpage is made up of boxes. Think boxes, within boxes, within boxes to break down a webpage.<br><br>*more to come later
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-2.4">
+				<div class="concept-title">HTML and CSS are both languages
+				</div>
+				<div class="concept-description">
+					<p>
+						HTML controls the structure of a webpage, whereas CSS (Cascading style sheets) controls the style of the page (how it looks).<br>*CSS will be covered further in Lesson 3
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2 id="lesson-3">Lesson 3:Adding Style to Structure with CSS
+			</h2>
+			<div class="concept" id="lesson-3.1">
+				<div class="concept-title">What is CSS?
+				</div>
+				<div class="concept-description">
+					<p>
+						CSS (which stands for Cascading Style Sheets) is a language used to describe the appearance and formatting of your HTML.<br><br>
+						A style sheet is a file that describes how an HTML file should look.<br><br>
+						We say these style sheets are cascading because the sheets can apply formatting when more than one style applies. 
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-3.2">
+				<div class="concept-title">Why Separate Form from Function?
+				</div>
+				<div class="concept-description">
+					<p> 
+						There are two main reasons for separating your form/formatting (CSS) from your functional structure (HTML):
+						<ul>
+							<li>You can apply the same formatting to multiple HTML elements without rewriting code over and over again. </li>
+							<li>You can apply similar appearance and formatting to several HTML pages from a single CSS file</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-3.3">
+				<div class="concept-title">Box Models
+				</div>
+				<div class="concept-description">
+					<p> 
+						As discussed earlier, HTML elements are boxes and each box has 4 components:
+					<ul>
+						<li>The <b>margin</b> is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.</li>
+						<li>The <b>border</b> is the edge of the element. It's what we've been making visible every time we set the border property.</li>
+						<li>The <b>padding</b> is the spacing between the content and the border. We can adjust this value with CSS to move the border closer to or farther from the content.</li>
+						<li>The <b>content</b> is the actual "stuff" in the box. If we're talking about a element, the "stuff" is the text of the paragraph.</li>
+					</ul>
+					<br>
+					*Big thanks to codecademy.com for these definitions (and a few others scattered throughout)
+
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-3.4">
+				<div class="concept-title">HTML and CSS Validations
+				</div>
+				<div class="concept-description">
+					<p> There are ways to check your code to see if they meet standards and are error free. Below are two sites where you can do just that!
+						<ul>
+							<li><a href="http://validator.w3.org/#validate_by_input">HTML</a></li>
+							<li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			</div>
+		<div class="lesson">
+			<h2 id="lesson-4">Lesson 4:Introduction to "Serious" Programming
+			</h2>
+			<div class="concept" id="lesson-4.1">
+				<div class="concept-title">Programming
+				</div>
+				<div class="concept-description">
+					<p>
+						A <b>computer</b> is a machine that can execute a program. With the right program, a computer can do any mechanical computation you can imagine.<br><br>
+						A <b>program</b> describes a very precise sequence of steps. Since the computer is just a machine, the program must give the steps in a way that can be executed mechanically. That is, the program can be followed without any thought.<br><br>
+						A <b>programming language</b> is a language designed for producing computer programs. A good programming language makes it easy for humans to read and write programs that can be executed by a computer.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-4.2">
+				<div class="concept-title">Why not write programs in a natural language like English?
+				</div>
+				<div class="concept-description">
+					<p> 
+						Because natural languages are very ambiguous (words/sentences can be interpreted in different ways by different people i.e. the word biweekly)<br><br>
+						Because natural languages are very verbose- too many words would be needed to describe something complex and in a precise manner	
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-4.3">
+				<div class="concept-title">Getting Started with Python Programming 
+				</div>
+				<div class="concept-description">
+					<p> 
+						<b>Python</b> is a programming language. The programs that we write in the Python language will be the input to the Python interpreter, which is a program that runs on the computer. The Python interpreter reads our programs and executes them by following the rules of the Python language. 	
+					</p>
+				</div>
+			</div>
+			<div class="lesson">
+			<h2 id="lesson-5">Lesson 5:Variables and Strings
+			</h2>
+			<div class="concept" id="lesson-5.1">
+				<div class="concept-title">Variables
+				</div>
+				<div class="concept-description">
+					<p>
+						A <b>variable</b> is a name that refers to a value (variables give programmers a way to give names to values). In Python, we can use any sequence of letters and numbers and underscores we want to make a variable name, so long as it does not start with a number. <br><br>
+						We can use the variable name anywhere we want and it means the same things as the value it refers to. 
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-5.2">
+				<div class="concept-title">Strings 
+				</div>
+				<div class="concept-description">
+					<p> 
+						A <b>string</b> is a sequence of characters surrounded by quotes; either single or double.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-5.3">
+				<div class="concept-title">Using Operators on Strings 
+				</div>
+				<div class="concept-description">
+					<p> 
+						The + operator between strings will 'add' them together, one after the other.Combining strings together like this is called <b>concatenation</b>. This means that the two concatenated strings are, in essence, pasted together (It is important to note that you cannot concatenate a string and a number).	
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-5.4">
+				<div class="concept-title">Indexing Strings
+				</div>
+				<div class="concept-description">
+					<p> 
+						When you want to select sub-sequences from a string, it is called <b>indexing</b>. Use the square brackets[] to specify which part of the string you want to select.<br><br>The positions in a string are numbered starting with 0.<br><br>When you use negative numbers in the index it starts counting from the back of the string (starting with -1).
+					</p>
+				</div>
+			</div>
+			<div class="lesson">
+			<h2 id="lesson-6">Lesson 6:Input-> Function-> Output
+			</h2>
+			<div class="concept" id="lesson-6.1">
+				<div class="concept-title">What is a Function (procedure)?
+				</div>
+				<div class="concept-description">
+					<p>
+						A <b>function</b> is a called group of instructuons that return a single result. A function takes input, does something to that input(the called group of instructions), and then produces output. <b></b>
+						A more detailed summary of what a procedure is and how it is used is explained in the following video:<br> <a href="https://www.youtube.com/watch?v=TYA0kypoJwY">Python Procedure Explained</a>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-6.2">
+				<div class="concept-title">What is the difference between making and using a function?
+				</div>
+				<div class="concept-description">
+					<p>
+						Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).<br><br>
+						In the "body" of the function, we write the code that specifies what to do with the input parameters. For example the following code could be the definition of a function called square:<br><br>
+						<b>
+						def square(x): <br>
+						&nbsp;&nbsp;&nbsp;answer = x * x <br>
+						&nbsp;&nbsp;&nbsp;return answer<br><br>
+						</b>
+						To use a function, we write the name of the function followed by the value(s)we want to give it in parentheses. Like this:<br><br>
+						<b>
+						print square(4) <br>
+						&nbsp;&nbsp;&nbsp;>>>16<br><br>
+					</b>
+						*I took this whole section from Andy's notes, because I liked how clear it was to me. My notes for this section were a little more jumbled, and more difficult to wrap my head around.
+					</p>
+				</div>
+			</div>
+			<div class="lesson">
+			<h2 id="lesson-7">Lesson 7:Decisions and Repetition: If and While
+			</h2>
+			<div class="concept" id="lesson-7.1">
+				<div class="concept-title">If Statement
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>Syntax/grammar</b><br> <br>if&lt; test expression&gt;:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; block&gt;<br><br>
+						The block will run if the test expression (comparison) is true. If the test expression does not evaluate to true, then the block doesn't execute.<br><br>
+						An if statement ends when there are no more indentations (all of the statements inside the block are indented). 
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-7.2">
+				<div class="concept-title">Else Statement
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>Syntax/grammar</b><br> <br>if&lt; test expression&gt;:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; block&gt;<br>
+						else:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; block&gt;<br><br>
+						If the test expression is true, the first block will execute. If the test expression does not ealuate to true, the second blocj will execute.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-7.3">
+				<div class="concept-title">Or Operator 
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>Syntax/grammar</b><br><br>&lt;expression&gt;or&lt;expression&gt;<br><br>
+						If the first expression is true, the value is true and the second expression is not evaluated.<br>If the first expression is false, the value is the value of the second expression.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-7.4">
+				<div class="concept-title">Loops! 
+				</div>
+				<div class="concept-description">
+					<p>
+						Loops allow things to be done over and over again. A <b>while loop</b>, for example, will continue to run as long as the test expression is true. Once it is false, we go to the next expression.<br><br>
+						<b>Syntax/grammar</b><br> <br>while&lt; test expression&gt;:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; block&gt;<br><br>
+						A <b>break statement</b> gives us a way to stop a loop even if the test condition is still true.
+					</p>
+				</div>
+			</div>
+			<div class="lesson">
+			<h2 id="lesson-8">Lesson 8:Structured Data- Lists and For Loops
+			</h2>
+			<div class="concept" id="lesson-8.1">
+				<div class="concept-title">String v List
+				</div>
+				<div class="concept-description">
+					<p>
+						A string is a sequence of <u>characters</u>, whereas a list is a sequence of <u>anything</u> (characters, strings, numbers, other lists, etc.) Lists are very versatile!<br><br>
+						When storing a list, use square brackets, and separate the elements of the list with commas.ex:<br>
+						<b>&lt;list&gt;-->&#91;&lt;expression&gt;,&lt;expression&gt;,...&#93;</b><br>
+						A list with zero elements is known as an empty list and looks like this:<br><b>&lt;list&gt;-->&#91;&#93;</b>
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-8.2">
+				<div class="concept-title">Nested Lists
+				</div>
+				<div class="concept-description">
+					<p>
+						List can be nested (lists inside lists)<br><br>
+						Ex. Beatles=[['john', 1940], ['paul', 1942], ['george', 1943],['ringo', 1940]]<br><br>
+						If we call 'Beatles', it will print all of our lists. If we call 'Beatles[3]' it will print the fourth position list. If we call 'Beatles[3][1]' it will print the second position value of the fourth position list.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-8.3">
+				<div class="concept-title">Mutation and Aliasing
+				</div>
+				<div class="concept-description">
+					<p>
+						Lists support <b>mutation</b>. Mutating a list means that we can change the value of a list after we've created it. In other words, mutation modifies an existing object. Strings that cannot be mutated are imutable.<br><br>
+						When we assign a different variable name to an existing list, that is <b>aliasing</b> (when we have two different ways of referring to the same object).
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-8.4">
+				<div class="concept-title">List Operations
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>append</b><br>
+						&lt;list&gt;.append(&lt;element&gt;)<br><br>
+						Append mutates the list that it is invoked on (it's not creating a new list).We pass in the element we want to append to the end of a list.<br><br>
+						<b>+</b><br>
+						&lt;list&gt;+&lt;list&gt;<br><br>
+						The + operation produces a new list by adding the contents of two lists together (it doesn't mutate either list).<br><br>
+						<b>len</b><br>
+						len(&lt;list&gt;)<br><br>
+						We pass into len the list we want to know the lenfth of. The output is the number of elements in the input.
+					</p>
+				</div>
+			</div>
+			<div class="concept" id="lesson-8.5">
+				<div class="concept-title">Loops on Lists
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>for loop</b><br>
+						A for loop is used when you have a piece of code you want to repeat n number of times. For a detailed explanation with examples, check out this great <a href="https://wiki.python.org/moin/ForLoop">description</a>.<br><br>
+						<b>index</b><br>
+						&lt;list&gt;.index(&lt;value&gt;)<br><br>
+						The index method is invoked on a list. You pass in a value, and the output of the index is the postutuon that the value exists in the list. If the list doesn't contain the value we passed in, index returns an error (not -1).<br><br>
+						<b>in</b><br>
+						&lt;value&gt;in&lt;list&gt;<br><br>
+						Simple and straightforward. If the specified value is in the list, the output is true. Otherwise, the output is false. Similarly, &lt;value&gt;not in&lt;list&gt; has the opposite meaning.
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
